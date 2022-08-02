@@ -44,6 +44,7 @@ const addMovie = (submittedMovie) => {
         <MovieList movies={movies}/>
         <h2>Add a movie:</h2>
         <MovieForm onMovieSubmit={(movie)=>addMovie(movie)}/>
+        {/* the above line is important. onMovieSubmit is a function called in MovieList. When it is called, it calles the addMovie function in MovieBox meaning the movie can be added in the correct container.*/}
         </>
     )
 }
